@@ -3,6 +3,7 @@ import LogoSlider from "Components/logo-slider";
 import TimeLine from "Components/timeline";
 import Head from "next/head";
 import css from "styled-jsx/css";
+import { prefix } from "utils/const";
 import Layout from "Wrappers/layout";
 
 const HomePageStyle = css`
@@ -212,6 +213,13 @@ export default function Home() {
           </a>
         </footer>
       </Layout>
+      <style jsx global>
+        {`
+        body {
+          background: #f8fafc url('${prefix}/home/bg.png') no-repeat top center;
+        }
+        `}
+      </style>
       <style jsx>{HomePageStyle}</style>
     </>
   );
