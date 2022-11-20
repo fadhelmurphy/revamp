@@ -1,3 +1,5 @@
+import { prefix } from "utils/const";
+
 export default function LogoSlider() {
   return (
     <>
@@ -9,26 +11,26 @@ export default function LogoSlider() {
             </div>
             <div class="slide">
               <img
-                src="/home/stack-slider/webpack.png"
-                alt=""
+                src={`${prefix}/home/stack-slider/webpack.png`}
+                alt="webpack fadhel ijlal falah"
               />
             </div>
             <div class="slide">
               <img
-                src="/home/stack-slider/nextjs-icon.png"
-                alt=""
+                src={`${prefix}/home/stack-slider/nextjs-icon.png`}
+                alt="nextjs fadhel ijlal falah"
               />
             </div>
             <div class="slide">
               <img
-                src="/home/stack-slider/gatsby-icon.png"
-                alt=""
+                src={`${prefix}/home/stack-slider/gatsby-icon.png`}
+                alt="gatsbyjs fadhel ijlal falah"
               />
             </div>
             <div class="slide">
               <img
-                src="/home/stack-slider/flutter.png"
-                alt=""
+                src={`${prefix}/home/stack-slider/flutter.png`}
+                alt="flutter fadhel ijlal falah"
               />
             </div>
             <div class="slide">
@@ -42,8 +44,8 @@ export default function LogoSlider() {
             </div>
             <div class="slide">
               <img
-                src="/home/stack-slider/tensorflow-logo.png"
-                alt=""
+                src={`${prefix}/home/stack-slider/tensorflow-logo.png`}
+                alt="tensorflow fadhel ijlal falah"
               />
             </div>
             <div class="slide">
@@ -54,14 +56,14 @@ export default function LogoSlider() {
             </div>
             <div class="slide">
               <img
-                src="/home/stack-slider/mysql.png"
-                alt=""
+                src={`${prefix}/home/stack-slider/mysql.png`}
+                alt="mysql fadhel ijlal falah"
               />
             </div>
             <div class="slide">
               <img
-                src="/home/stack-slider/laravel.png"
-                alt=""
+                src={`${prefix}/home/stack-slider/laravel.png`}
+                alt="laravel fadhel ijlal falah"
               />
             </div>
             <div class="slide">
