@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'frontend' # Here the path to the folder where package-lock.json is located.
 
     strategy:
       matrix:
