@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Head from "next/head";
+import { prefix } from "utils/const";
 
 const LayoutStyle = <style jsx>{``}</style>;
 
@@ -8,7 +9,7 @@ const Layout = ({ TitlePage, Header, children, Footer }) => {
     <>
       <Head>
         <title>{TitlePage}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${prefix}/favicon.ico`} />
       </Head>
       {Header && <Header />}
       <div className="container mx-auto">

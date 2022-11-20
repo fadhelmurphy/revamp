@@ -1,4 +1,5 @@
 import { prefix } from "utils/const";
+import Image from "./image-fallback-next";
 
 export default function LogoSlider() {
   return (
@@ -10,25 +11,25 @@ export default function LogoSlider() {
               <h2 className="text-gray-500 text-2xl font-bold">React</h2>
             </div>
             <div class="slide">
-              <img
+              <Image
                 src={`${prefix}/home/stack-slider/webpack.png`}
                 alt="webpack fadhel ijlal falah"
               />
             </div>
             <div class="slide">
-              <img
+              <Image
                 src={`${prefix}/home/stack-slider/nextjs-icon.png`}
                 alt="nextjs fadhel ijlal falah"
               />
             </div>
             <div class="slide">
-              <img
+              <Image
                 src={`${prefix}/home/stack-slider/gatsby-icon.png`}
                 alt="gatsbyjs fadhel ijlal falah"
               />
             </div>
             <div class="slide">
-              <img
+              <Image
                 src={`${prefix}/home/stack-slider/flutter.png`}
                 alt="flutter fadhel ijlal falah"
               />
@@ -43,7 +44,7 @@ export default function LogoSlider() {
               <h2 className="text-gray-500 text-2xl font-bold">Redux</h2>
             </div>
             <div class="slide">
-              <img
+              <Image
                 src={`${prefix}/home/stack-slider/tensorflow-logo.png`}
                 alt="tensorflow fadhel ijlal falah"
               />
@@ -55,13 +56,13 @@ export default function LogoSlider() {
               <h2 className="text-gray-500 text-2xl font-bold">Express.js</h2>
             </div>
             <div class="slide">
-              <img
+              <Image
                 src={`${prefix}/home/stack-slider/mysql.png`}
                 alt="mysql fadhel ijlal falah"
               />
             </div>
             <div class="slide">
-              <img
+              <Image
                 src={`${prefix}/home/stack-slider/laravel.png`}
                 alt="laravel fadhel ijlal falah"
               />
@@ -104,8 +105,8 @@ export default function LogoSlider() {
             // width: calc(150px * 24);
           }
           .slide {
-            width: 150px;
-            height: 60%;
+            width: 9.375rem;
+            height: 3.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -115,8 +116,6 @@ export default function LogoSlider() {
           }
           .slide img {
             display: block;
-            width: 100%;
-            height: 100%;
             padding: 0 1rem;
             object-fit: contain;
             -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
