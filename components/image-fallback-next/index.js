@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { prefix } from "utils/const";
 // import {
 // 	toBase64, shimmerImgLoader,
 // } from "Helpers/utils";
@@ -9,9 +10,9 @@ const ImageFallbackWithNext = ({
 	src, alt, outOfStock, objectFit, ...props
 }) => {
 
-	const fallBackSrc = `https://via.placeholder.com/120x60?text=Not%20Found`;
+	const fallBackSrc = `${prefix}/placeholder_image_not_found.png`;
 	const [imageError, setImageError] = useState(false);
-	const [isLoading, setLoading] = useState(true);
+	// const [isLoading, setLoading] = useState(true);
 
 	return (
 		
@@ -23,7 +24,7 @@ const ImageFallbackWithNext = ({
 		objectFit={objectFit}
 		layout="fill"
 		onError={() => setImageError(true)}
-		onLoadingComplete={() => setLoading(false)}
+		// onLoadingComplete={() => setLoading(false)}
 		{...props}
 	/>
 	);
