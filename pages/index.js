@@ -84,7 +84,7 @@ const HomePageStyle = css`
   }
 
   .card {
-    flex-basis: 45%;
+    flex-basis: 32vw;
     padding: 2.5rem;
     text-align: left;
     color: inherit;
@@ -96,8 +96,7 @@ const HomePageStyle = css`
   .card:hover,
   .card:focus,
   .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: rgb(129 140 248);
   }
 
   .card h3 {
@@ -147,10 +146,9 @@ export default function Home() {
         </div>
       </Layout>
       <hr className="mt-24" />
-      <div className="bg-violet-100 bg-opacity-50">
+      <div className="my-personal-project bg-violet-100 bg-opacity-50">
         <div className="container mx-auto py-24">
-
-        <div className="header mb-12 p-8 md:p-0">
+          <div className="header mb-12 p-8 md:p-0">
             <div className="header-title mb-6">
               <h3 className="text-6xl text-indigo-400 tracking-wides font-semibold font-header">
                 My Personal <br /> Project
@@ -158,49 +156,66 @@ export default function Home() {
             </div>
             <div className="header-subtitle">
               <p className="text-3xl text-slate-400 tracking-wides font-normal font-header">
-                I've watched some tutorial on Internet and I create my own exercise.
+                I've watched some tutorial on Internet and I create my own
+                exercise.
               </p>
             </div>
           </div>
-        <div className="content px-8 md:px-0">
-          <div className="grid gap-8 grid-cols-2">
-            <a
-              href="https://nextjs.org/docs"
-              className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
-            >
-              <h3>React Context LocalStorage Boilerplate &rarr;</h3>
-              <p className="text-gray-500">Find in-depth information about Next.js features and API.</p>
-            </a>
+          <div className="content px-8 md:px-0">
+            <div className="grid gap-8 grid-cols-2">
+              <a
+                href="https://nextjs.org/docs"
+                className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
+              >
+                <h3>React Context LocalStorage Boilerplate &rarr;</h3>
+                <p className="text-gray-500">
+                  Find in-depth information about Next.js features and API.
+                </p>
+              </a>
 
-            <a
-              href="https://nextjs.org/learn"
-              className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
-            >
-              <h3>Module Federation (React x Vue) &rarr;</h3>
-              <p className="text-gray-500">Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
+              <a
+                href="https://nextjs.org/learn"
+                className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
+              >
+                <h3>Module Federation (React x Vue) &rarr;</h3>
+                <p className="text-gray-500">
+                  Learn about Next.js in an interactive course with quizzes!
+                </p>
+              </a>
 
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
-            >
-              <h3>Examples &rarr;</h3>
-              <p className="text-gray-500">Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
+              <a
+                href="https://github.com/vercel/next.js/tree/master/examples"
+                className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
+              >
+                <h3>Examples &rarr;</h3>
+                <p className="text-gray-500">
+                  Discover and deploy boilerplate example Next.js projects.
+                </p>
+              </a>
 
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
-            >
-              <h3>Deploy &rarr;</h3>
-              <p className="text-gray-500">
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
+              <a
+                href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
+              >
+                <h3>Deploy &rarr;</h3>
+                <p className="text-gray-500">
+                  Instantly deploy your Next.js site to a public URL with
+                  Vercel.
+                </p>
+              </a>
+            </div>
           </div>
         </div>
-        </div>
       </div>
+      <style jsx>
+        {`
+          ::selection {
+            background: rgb(251 113 133);
+            color: #fff;
+            text-shadow: none;
+          }
+        `}
+      </style>
       <Layout>
         <footer>
           <a
@@ -208,15 +223,17 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by <img src={`${prefix}/vercel.svg`} alt="Vercel" className="logo" />
+            Powered by{" "}
+            <img src={`${prefix}/vercel.svg`} alt="Vercel" className="logo" />
           </a>
         </footer>
       </Layout>
       <style jsx global>
         {`
-        body {
-          background: #f8fafc url('${prefix}/home/bg.png') no-repeat top center;
-        }
+          body {
+            background: #f8fafc url("${prefix}/home/bg.png") no-repeat top
+              center;
+          }
         `}
       </style>
       <style jsx>{HomePageStyle}</style>
