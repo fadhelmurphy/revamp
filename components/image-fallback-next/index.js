@@ -10,7 +10,7 @@ const ImageFallbackWithNext = ({
 	src, alt, outOfStock, objectFit, ...props
 }) => {
 
-	const fallBackSrc = `${prefix}/placeholder_image_not_found.png`;
+	const fallBackSrc = `https://fadhelmurphy.github.io/revamp/placeholder_image_not_found.png`;
 	const [imageError, setImageError] = useState(false);
 	// const [isLoading, setLoading] = useState(true);
 
