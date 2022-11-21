@@ -5,7 +5,7 @@ const nextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   images: {
     formats: ["image/webp"],
-    loader: "akamai",
+    unoptimized: true,
     path: "",
   },
 };
