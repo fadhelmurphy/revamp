@@ -155,7 +155,7 @@ export default function Home() {
               </h3>
             </div>
             <div className="header-subtitle">
-              <p className="text-3xl text-slate-400 tracking-wides font-normal font-header">
+              <p className="text-3xl text-base-2 tracking-wides font-normal font-header">
                 I've watched some tutorial on Internet and I create my own
                 exercise.
               </p>
@@ -168,7 +168,7 @@ export default function Home() {
                 className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
               >
                 <h3>React Context LocalStorage Boilerplate &rarr;</h3>
-                <p className="text-gray-500">
+                <p className="text-base-2">
                   Find in-depth information about Next.js features and API.
                 </p>
               </a>
@@ -178,7 +178,7 @@ export default function Home() {
                 className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
               >
                 <h3>Module Federation (React x Vue) &rarr;</h3>
-                <p className="text-gray-500">
+                <p className="text-base-2">
                   Learn about Next.js in an interactive course with quizzes!
                 </p>
               </a>
@@ -188,7 +188,7 @@ export default function Home() {
                 className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
               >
                 <h3>Examples &rarr;</h3>
-                <p className="text-gray-500">
+                <p className="text-base-2">
                   Discover and deploy boilerplate example Next.js projects.
                 </p>
               </a>
@@ -198,7 +198,7 @@ export default function Home() {
                 className="card backdrop-blur-xl bg-white/50 shadow-2xl shadow-purple-200/50"
               >
                 <h3>Deploy &rarr;</h3>
-                <p className="text-gray-500">
+                <p className="text-base-2">
                   Instantly deploy your Next.js site to a public URL with
                   Vercel.
                 </p>
@@ -207,15 +207,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <style jsx>
-        {`
-          ::selection {
-            background: rgb(251 113 133);
-            color: #fff;
-            text-shadow: none;
-          }
-        `}
-      </style>
       <Layout>
         <footer>
           <a
@@ -228,14 +219,6 @@ export default function Home() {
           </a>
         </footer>
       </Layout>
-      <style jsx global>
-        {`
-          body {
-            background: #f8fafc url("${prefix}/home/bg.png") no-repeat top
-              center;
-          }
-        `}
-      </style>
       <style jsx>{HomePageStyle}</style>
     </>
   );

@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-url-header-home: url("/home/bg.png");
+}
+
 @layer base {
     html, body {
     padding: 0;
     margin: 0;
     font-family: Poppins, system-ui, sans-serif;
+    @apply text-base;
+    }
+    body {
+    background-image: var(--bg-url-header-home);
+    @apply bg-no-repeat;
+    @apply bg-top;
     }
     ::selection {
-      background: rgb(20 184 166);
+      background: #f9d2af;
       color: #fff;
       text-shadow: none;
   }

@@ -6,7 +6,12 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-      extend: {},
+        extend: {
+          colors: {
+          'base': '#2e3e6a',
+          'base-2': '#617fad',
+        },
+      },
       fontFamily: {
         'header': ['Poppins', 'ui-sans-serif'],
       },
