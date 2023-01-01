@@ -25,7 +25,7 @@ Header.propTypes = {
 Header.defaultProps = {
   yourname: "Hi, I'm Fadhel. 👋",
   yourRole: <>
-  <span className="relative stabilo after:h-[1vh] md:h-[4vh]">Software</span> Engineer <br/>Based in Tangerang
+  <span className="relative stabilo after:h-[1vh] after:md:h-[4vh]">Software</span> Engineer <br/>Based in Tangerang
   <style jsx>
         {`
         .stabilo {
