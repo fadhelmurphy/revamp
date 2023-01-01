@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --bg-url-header-home: url("/home/bg.png");
+  --bg-url-header-local-home: url("/home/bg.png");
+  --bg-url-header-home: url("/revamp/home/bg.png");
 }
 
 @layer base {
@@ -14,7 +15,6 @@
     @apply text-base;
     }
     body {
-    background-image: var(--bg-url-header-home);
     @apply bg-no-repeat;
     @apply bg-top;
     }

@@ -219,6 +219,11 @@ export default function Home() {
           </a>
         </footer>
       </Layout>
+      <style jsx global>{`
+        body {
+          background-image: ${process.env.NODE_ENV === "production" ? `var(--bg-url-header-home)` : `var(--bg-url-header-local-home)`};
+        }
+      `}</style>
       <style jsx>{HomePageStyle}</style>
     </>
   );
