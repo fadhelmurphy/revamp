@@ -122,8 +122,8 @@ export default function LogoSlider() {
             -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
             filter: grayscale(0%);
           }
-          .slider:hover .slide-track {
-            animation-play-state: paused;
+          .slide-track:has(> .slide:hover) {
+            animation-play-state: paused!important;
           }
         `}
       </style>
