@@ -3,7 +3,7 @@ import LogoSlider from "./logo-slider";
 
 const Header = ({yourname, yourRole}) => (
   <>
-    <div className="h-52 md:h-[55vh] mb-6 md:mb-24 px-8 md:px-0 flex flex-col justify-end">
+    <div className="h-72 md:h-[55vh] mb-6 md:mb-24 px-8 md:px-0 flex flex-col justify-end">
       <div className="inner container md:mx-auto text-left md:text-center">
       <p className="text-2xl md:text-6xl text-base-2 font-semibold font-header">
         {yourname}
